@@ -39,7 +39,7 @@ Future Improvements:
 3. Improve accessibility with ARIA attributes
 
 Live Demo
-1. 👉 https://portable-arithmetic-calculator.vercel.app/
+1. 👉 https://arith-calc.vercel.app/
 
 GitHub Repository
 1. 👉 https://github.com/adeshina-abdulrokeeb/portable-arithmetic-calculator-.git
