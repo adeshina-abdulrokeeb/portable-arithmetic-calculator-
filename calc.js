@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
     intro.style.opacity = "0";
     intro.addEventListener("transitionend", () => {
       intro.style.display = "none";
-      calculatorContainer.classList.add("fade-in"); 
+      calculatorContainer.classList.add("fade-in");
     }, { once: true });
   }, 2000);
 });
