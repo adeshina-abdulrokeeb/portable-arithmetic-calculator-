@@ -160,6 +160,12 @@ body.light #calculator {
 body.light button {
   color: #222;
 }
+body.light #history {
+  color: #222;
+} 
+body.light footer {
+  color: #222;
+}
 footer {
   margin-top: 20px;
   text-align: center;
@@ -167,7 +173,7 @@ footer {
   font-size: 0.8rem;
 }
 /* Responsiveness for mobile */
-@media (max-width: 700px), (max-height: 700px) {
+@media (max-width: 700px) {
   #calculator {
     width: 95vw;
     padding: 3vh 3vw;
