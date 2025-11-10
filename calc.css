@@ -35,7 +35,7 @@ body {
   display: none;
 }
 /* Fade-in animation for calculator */
-#calculator-container.fade-in {
+#calculator.fade-in {
   display: block;
   animation: fadeInCalc 0.8s forwards;
 }
@@ -165,4 +165,30 @@ footer {
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.8rem;
+}
+/* Responsiveness for mobile */
+@media (max-width: 700px), (max-height: 700px) {
+  #calculator {
+    width: 95vw;
+    padding: 3vh 3vw;
+    max-height: 95vh;
+  }
+  #display {
+    font-size: 4vw;
+    padding: 0.5vh 1vw;
+  }
+  button {
+    font-size: 2.5vw;
+    padding: 1.5vh 0;
+  }
+  #keys {
+    gap: 1.2vw;
+  }
+  footer {
+    font-size: 3vw;
+  }
+  #themeBtn {
+    font-size: 3vw;
+    padding: 0.8vh;
+  }
 }
