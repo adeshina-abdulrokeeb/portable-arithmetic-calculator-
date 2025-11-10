@@ -1,34 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, intial-scale=1.0">
-  <title>JavaScript Calculator</title>
-  <link rel="stylesheet" href="calculator.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern JavaScript Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
 </head>
+
 <body>
-  <div id="calculator">
-    <input id="display" readonly>
-    <div id="keys">
-      <button onclick="appendToDisplay('+')" class="operator-btn">+</button>
-      <button onclick="appendToDisplay('7')">7</button>
-      <button onclick="appendToDisplay('8')">8</button>
-      <button onclick="appendToDisplay('9')">9</button>
-      <button onclick="appendToDisplay('-')" class="operator-btn">-</button>
-      <button onclick="appendToDisplay('4')">4</button>
-      <button onclick="appendToDisplay('5')">5</button>
-      <button onclick="appendToDisplay('6')">6</button>
-      <button onclick="appendToDisplay('*')" class="operator-btn">*</button>
-      <button onclick="appendToDisplay('1')">1</button>
-      <button onclick="appendToDisplay('2')">2</button>
-      <button onclick="appendToDisplay('3')">3</button>
-      <button onclick="appendToDisplay('/')" class="operator-btn">/</button>
-      <button onclick="appendToDisplay('0')">0</button>
-      <button onclick="appendToDisplay('.')">.</button>
-      <button onclick="calculate()">=</button>
-      <button onclick="clearDisplay()" class="operator-btn">C</button>
+  <!-- Intro preloader -->
+  <div id="intro">Calculator by Adeshina Eniola</div>
+
+  <div class="container">
+    <div class="theme-toggle">
+      <button id="themeBtn">🌙</button>
     </div>
+
+    <div id="calculator">
+      <input id="display" readonly placeholder="0" />
+
+      <div id="keys">
+        <button data-action="clear" class="operator">C</button>
+        <button data-value="/" class="operator">÷</button>
+        <button data-value="*" class="operator">×</button>
+        <button data-action="backspace" class="operator">⌫</button>
+
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="-" class="operator">−</button>
+
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="+" class="operator">+</button>
+
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-action="calculate" class="equal">=</button>
+
+        <button data-value="0" class="zero">0</button>
+        <button data-value=".">.</button>
+      </div>
+
+      <div id="history"></div>
+    </div>
+
+    <footer>Built by Adeshina Eniola</footer>
   </div>
-<script src="calculator.js"></script>
+
+  <script src="calculator.js"></script>
 </body>
+
 </html>
